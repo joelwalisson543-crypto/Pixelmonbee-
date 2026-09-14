@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="PixelmonBee — servidor Pixelmon com loja, VIPs, chaves de temporada e Mega Meteoritos.">
+  <title>PixelmonBee 🐝</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-glow glow-1"></div>
+  <div class="bg-glow glow-2"></div>
+
+  <header class="navbar">
+    <a class="brand" href="#inicio">
+      <span class="brand-bee">🐝</span>
+      <span>Pixelmon<span>Bee</span></span>
+    </a>
+    <button class="menu-btn" aria-label="Abrir menu">☰</button>
+    <nav class="nav-links">
+      <a href="#inicio">Início</a>
+      <a href="#servidor">Servidor</a>
+      <a href="#loja">Loja</a>
+      <a href="#regras">Regras</a>
+      <a href="#como-comprar">Como comprar</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="hero-content reveal">
+        <div class="pill">🐝 UMA NOVA COLMEIA ESTÁ ESPERANDO POR VOCÊ</div>
+        <h1>Bem-vindo à<br><span>PixelmonBee</span></h1>
+        <p>Entre na nossa aventura Pixelmon, conquiste seu espaço na colmeia e evolua junto com a comunidade!</p>
+        <div class="hero-actions">
+          <a href="#servidor" class="btn btn-primary">🎮 Jogar agora</a>
+          <a href="#loja" class="btn btn-secondary">🛍️ Ver loja</a>
+        </div>
+      </div>
+      <div class="hero-art reveal">
+        <div class="art-ring"></div>
+        <img src="assets/bee-mascot.jpg" alt="Mascote da PixelmonBee">
+      </div>
+    </section>
+
+    <section id="servidor" class="section">
+      <div class="section-title reveal">
+        <span class="eyebrow">🎮 CONECTE-SE</span>
+        <h2>Entre na nossa colmeia</h2>
+        <p>Nosso servidor ainda usa a rede Aternos enquanto juntamos recursos para uma host paga.</p>
+      </div>
+
+      <div class="server-card reveal">
+        <div class="server-icon">🐝</div>
+        <div class="server-info">
+          <span class="label">IP DO SERVIDOR</span>
+          <div class="ip-row">
+            <code id="server-ip">PixelmonBee.aternos.me:59783</code>
+            <button class="copy-btn" id="copy-ip">📋 Copiar</button>
+          </div>
+          <p class="server-note">✨ Estamos juntando para uma host paga para termos um desempenho ainda melhor!</p>
+        </div>
+        <div class="online-dot"><i></i> Aternos</div>
+      </div>
+
+      <div class="info-grid">
+        <div class="info-card reveal"><span>⚡</span><h3>Pixelmon</h3><p>Aventure-se, capture Pokémon e monte seu time.</p></div>
+        <div class="info-card reveal"><span>👑</span><h3>Vantagens</h3><p>Vips, itens especiais e conteúdos exclusivos.</p></div>
+        <div class="info-card reveal"><span>🤝</span><h3>Comunidade</h3><p>Divirta-se e faça parte da nossa comunidade.</p></div>
+      </div>
+    </section>
+
+    <section id="loja" class="section shop-section">
+      <div class="section-title reveal">
+        <span class="eyebrow">🛍️ LOJA PIXELMONBEE</span>
+        <h2>Compre e fortaleça a colmeia</h2>
+        <p>Uma loja limitada, com itens e vantagens especiais para quem quer apoiar o servidor.</p>
+      </div>
+
+      <div class="shop-banner reveal">
+        <img src="assets/loja-banner.png" alt="Banner da loja PixelmonBee">
+      </div>
+
+      <div class="shop-tabs reveal">
+        <button class="tab active" data-filter="all">✨ Tudo</button>
+        <button class="tab" data-filter="vip">👑 VIP</button>
+        <button class="tab" data-filter="key">🔑 Chaves</button>
+        <button class="tab" data-filter="meteor">🧬 Meteoritos</button>
+      </div>
+
+      <div class="products">
+        <article class="product vip reveal" data-category="vip">
+          <div class="product-icon">🐝</div>
+          <span class="product-type">VIP • 1 MÊS</span>
+          <h3>Vip Abelhinha</h3>
+          <div class="price">R$ 14,99</div>
+          <ul>
+            <li>Acesso à área VIP</li><li>Upador VIP</li><li>Kit Abelhinha</li>
+            <li>Tag no Discord e Minecraft</li><li>Mochila customizada</li>
+          </ul>
+          <button class="buy-btn" data-item="Vip Abelhinha — R$14,99">🛒 Quero este</button>
+        </article>
+
+        <article class="product vip featured reveal" data-category="vip">
+          <div class="ribbon">MAIS COMPLETO</div>
+          <div class="product-icon">👑</div>
+          <span class="product-type">VIP • 1 MÊS</span>
+          <h3>Vip Rainha da Colmeia</h3>
+          <div class="price">R$ 30,99</div>
+          <ul>
+            <li>Fly</li><li>Acesso a comandos</li><li>Área VIP</li>
+            <li>Upador VIP</li><li>Kit Rainha da Colmeia</li>
+            <li>Mochila customizada</li><li>Tag no Discord e Minecraft</li>
+            <li>Outras vantagens...</li>
+          </ul>
+          <button class="buy-btn" data-item="Vip Rainha da Colmeia — R$30,99">🛒 Quero este</button>
+        </article>
+
+        <article class="product key reveal" data-category="key">
+          <div class="product-icon">🔑</div>
+          <span class="product-type">CHAVE • TEMPORADA</span>
+          <h3>Chave de Textura</h3>
+          <div class="price">R$ 20,99</div>
+          <p>Abra caixas dentro do servidor e tenha acesso a Pokémon com texturas únicas.</p>
+          <div class="mini-note">🔄 Texturas novas a cada temporada/mês!</div>
+          <button class="buy-btn" data-item="Chave de Textura da Temporada — R$20,99">🛒 Quero este</button>
+        </article>
+
+        <article class="product meteor reveal" data-category="meteor">
+          <div class="product-icon">🧬</div>
+          <span class="product-type">MEGA EVOLUÇÃO</span>
+          <h3>Mega Meteorito</h3>
+          <div class="meteor-grid">
+            <div><b>Meteorito-X</b><strong>R$ 5,99</strong></div>
+            <div><b>Meteorito-Z</b><strong>R$ 5,99</strong></div>
+            <div><b>Meteorito-Y</b><strong>R$ 5,99</strong></div>
+            <div><b>Meteorito-W</b><strong>R$ 5,99</strong></div>
+            <div><b>Meteorito-T</b><strong>R$ 5,99</strong></div>
+          </div>
+          <p>Compre um meteorito para evoluir seu Pokémon para Mega!</p>
+          <button class="buy-btn" data-item="Mega Meteorito — escolha X, Z, Y, W ou T — R$5,99">🛒 Quero este</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="regras" class="section rules-section">
+      <div class="section-title reveal">
+        <span class="eyebrow">📜 REGRAS</span>
+        <h2>Uma colmeia saudável para todos</h2>
+        <p>Leia as regras antes de participar. Respeito e bom senso vêm sempre em primeiro lugar.</p>
+      </div>
+
+      <div class="rules">
+        <details class="rule reveal" open>
+          <summary><span>01</span> Bom Senso e Respeito Acima de Tudo</summary>
+          <p>Mesmo que algo não esteja explicitamente descrito nas regras, é necessário usar o bom senso para garantir uma boa convivência. Nossa comunidade abriga pessoas de todas as idades, gêneros e etnias. Trate todos com respeito e empatia.</p>
+        </details>
+        <details class="rule reveal">
+          <summary><span>02</span> Autoridade da Staff</summary>
+          <p>Caso um membro da staff peça para você parar de fazer algo, escute-o imediatamente. Desrespeitar ou ignorar avisos da staff pode resultar em punições, mesmo que a ação não esteja explicitamente descrita.</p>
+          <p><b>Importante:</b> as regras também se aplicam à equipe e à staff. Em caso de abuso de poder, reporte imediatamente por ticket ou DM para a administração.</p>
+        </details>
+        <details class="rule reveal">
+          <summary><span>03</span> Revisão de Punições</summary>
+          <p>Se acredita que foi punido injustamente, solicite uma revisão através de um ticket no Discord. Apresente evidências e explique sua versão de forma respeitosa. Insistência repetitiva, desrespeito ou spam de tickets pode resultar em extensão da punição.</p>
+        </details>
+        <details class="rule reveal">
+          <summary><span>04</span> Tempo e Gravidade das Punições</summary>
+          <p>O tempo e o tipo de punição podem variar de caso para caso. As regras são apenas uma referência; a equipe pode adaptar a punição de acordo com a situação e seu julgamento.</p>
+        </details>
+      </div>
+
+      <div class="suggestion reveal">
+        💡 <b>Tem uma sugestão?</b> Deixe sua ideia no canal de sugestões do Discord. Sua opinião ajuda a construir uma comunidade melhor! ✨
+      </div>
+    </section>
+
+    <section id="como-comprar" class="section buy-section">
+      <div class="buy-box reveal">
+        <div class="buy-emoji">🎟️</div>
+        <div>
+          <span class="eyebrow">COMO COMPRAR</span>
+          <h2>Quer fazer uma comprinha?</h2>
+          <p>Crie um ticket no nosso Discord e fale seu <b>nick do Minecraft</b> + o item que deseja comprar. Vamos atender você educadamente! 🤝💰</p>
+        </div>
+        <a class="btn btn-primary discord-btn" href="#" onclick="return false;">💬 Abrir Discord</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand">🐝 <b>PixelmonBee</b></div>
+    <p>Feito com carinho para a nossa colmeia. ✨</p>
+    <p class="copyright">© <span id="year"></span> PixelmonBee</p>
+  </footer>
+
+  <div class="toast" id="toast">✅ IP copiado!</div>
+  <script src="script.js"></script>
+</body>
+</html>
