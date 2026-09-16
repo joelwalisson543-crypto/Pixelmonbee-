@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ff8500">
+  <meta name="description" content="PixelmonBee — uma colmeia Pixelmon com novas gerações, Mega Evoluções, formas especiais, comunidade e loja.">
+  <title>PixelmonBee • Sua aventura começa aqui</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-a"></div><div class="ambient ambient-b"></div>
+
+  <header class="navbar">
+    <a class="brand" href="#inicio" aria-label="PixelmonBee início">
+      <img src="bee-mascot.jpg" alt="Mascote PixelmonBee" class="brand-img">
+      <span>Pixelmon<span>Bee</span></span>
+    </a>
+    <button class="menu-btn" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav class="nav-links">
+      <a href="#inicio">Início</a>
+      <a href="#servidor">Servidor</a>
+      <a href="#novidades">Novidades</a>
+      <a href="#exclusivos">Exclusivos</a>
+      <a href="#loja">Loja</a>
+      <a href="#regras">Regras</a>
+      <a class="nav-discord" href="https://discord.gg/A4HREpduk" target="_blank" rel="noopener">Discord ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="hero-copy reveal">
+        <div class="badge">🐝 BEM-VINDO À NOVA ERA DA COLMEIA</div>
+        <h1>Seu próximo mundo<br><span>começa aqui.</span></h1>
+        <p>Capture, treine, evolua e descubra tudo o que a PixelmonBee está preparando. Uma comunidade Pixelmon com novidades, Mega Evoluções, formas especiais e muito conteúdo para explorar.</p>
+        <div class="hero-actions">
+          <a href="#servidor" class="btn primary">🎮 Jogar agora</a>
+          <a href="https://discord.gg/A4HREpduk" target="_blank" rel="noopener" class="btn ghost">💬 Entrar no Discord</a>
+        </div>
+        <div class="hero-mini">
+          <span>⚡ Nova Geração</span><span>🧬 Mega Evoluções</span><span>✨ Formas especiais</span>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="hero-frame">
+          <img src="server-scene.png" alt="Cena do servidor PixelmonBee">
+          <div class="hero-overlay"></div>
+          <div class="scene-tag">🐝 PIXELMONBEE</div>
+        </div>
+        <div class="floating-card"><b>🔥 A colmeia está evoluindo</b><small>Novos conteúdos chegando</small></div>
+      </div>
+    </section>
+
+    <section id="servidor" class="section">
+      <div class="section-heading reveal">
+        <span>🎮 SERVIDOR</span>
+        <h2>Entre na colmeia</h2>
+        <p>Prepare sua equipe, chame seus amigos e venha construir sua própria história.</p>
+      </div>
+
+      <div class="server-panel reveal">
+        <div class="server-badge">🐝</div>
+        <div class="server-main">
+          <small>ENDEREÇO DO SERVIDOR</small>
+          <div class="ip-line">
+            <code id="server-ip">PixelmonBee.aternos.me:59783</code>
+            <button id="copy-ip">📋 Copiar IP</button>
+          </div>
+          <p>✨ Estamos trabalhando para levar a PixelmonBee para uma hospedagem paga e ainda melhor.</p>
+        </div>
+        <div class="status"><i></i> Aternos</div>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature reveal"><b>⚡</b><h3>Aventura Pixelmon</h3><p>Capture Pokémon, monte seu time, explore e evolua sua jornada.</p></article>
+        <article class="feature reveal"><b>🏆</b><h3>Progressão</h3><p>Tenha objetivos, conquistas e conteúdo para descobrir ao longo da aventura.</p></article>
+        <article class="feature reveal"><b>🤝</b><h3>Comunidade</h3><p>Converse, faça amizades e participe das novidades da nossa colmeia.</p></article>
+      </div>
+    </section>
+
+    <section id="novidades" class="section updates-section">
+      <div class="section-heading reveal">
+        <span>🚀 NOVIDADES</span>
+        <h2>A colmeia está evoluindo</h2>
+        <p>Conteúdos que dão uma identidade própria à PixelmonBee.</p>
+      </div>
+
+      <div class="update-grid">
+        <article class="update-card update-main reveal">
+          <div class="update-icon">🌌</div>
+          <div>
+            <span class="eyebrow">NOVA GERAÇÃO</span>
+            <h3>Mais Pokémon para descobrir</h3>
+            <p>Expanda sua Pokédex com criaturas e conteúdos de gerações mais recentes dentro da experiência PixelmonBee.</p>
+          </div>
+          <b class="new-pill">NOVO</b>
+        </article>
+
+        <article class="update-card reveal">
+          <div class="update-icon">💥</div>
+          <span class="eyebrow">MEGA EVOLUÇÕES</span>
+          <h3>Formas que mudam a batalha</h3>
+          <p>Novas Mega Evoluções e projetos especiais para deixar os seus Pokémon ainda mais únicos.</p>
+        </article>
+
+        <article class="update-card reveal">
+          <div class="update-icon">🎨</div>
+          <span class="eyebrow">FORMAS ESPECIAIS</span>
+          <h3>Pokémon com a cara da Bee</h3>
+          <p>Texturas e formas especiais fazem parte da identidade visual da nossa colmeia.</p>
+        </article>
+
+        <article class="update-card reveal">
+          <div class="update-icon">🎉</div>
+          <span class="eyebrow">EVENTOS</span>
+          <h3>Temporadas e novidades</h3>
+          <p>Fique atento ao Discord para acompanhar eventos, temporadas, anúncios e novas ideias.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="exclusivos" class="section exclusive-section">
+      <div class="section-heading reveal">
+        <span>✨ PIXELMONBEE ORIGINALS</span>
+        <h2>Coisas que você encontra na nossa colmeia</h2>
+        <p>Uma área dedicada aos conteúdos especiais que fazem o servidor ter a própria identidade.</p>
+      </div>
+
+      <div class="exclusive-grid">
+        <article class="exclusive-card reveal">
+          <div class="exclusive-art art-mega"><span>MEGA</span><b>⚡</b></div>
+          <div class="exclusive-copy">
+            <span>01 • EVOLUÇÃO</span>
+            <h3>Mega Evoluções</h3>
+            <p>Projetos de Mega Evolução, incluindo formas especiais pensadas para a experiência da PixelmonBee.</p>
+          </div>
+        </article>
+
+        <article class="exclusive-card reveal">
+          <div class="exclusive-art art-anime"><span>FORMA</span><b>✦</b></div>
+          <div class="exclusive-copy">
+            <span>02 • VISUAL</span>
+            <h3>Formas & Texturas</h3>
+            <p>Pokémon com visuais diferentes, texturas de temporada e criações para colecionar.</p>
+          </div>
+        </article>
+
+        <article class="exclusive-card reveal">
+          <div class="exclusive-art art-gen"><span>DEX</span><b>9+</b></div>
+          <div class="exclusive-copy">
+            <span>03 • POKÉDEX</span>
+            <h3>Nova Geração</h3>
+            <p>Uma Pokédex em constante expansão para quem gosta de descobrir Pokémon e novidades.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="roadmap reveal">
+        <div><span>ATUALIZAÇÕES</span><b>em construção</b></div>
+        <div class="road-line"><i></i><i></i><i></i><i></i></div>
+        <p>Quer acompanhar o que chega primeiro? Entre no Discord e veja os anúncios da equipe.</p>
+        <a class="btn ghost" href="https://discord.gg/A4HREpduk" target="_blank" rel="noopener">Ver novidades no Discord ↗</a>
+      </div>
+    </section>
+
+    <section id="carta" class="section letter-section">
+      <div class="letter-wrap reveal">
+        <div class="letter-top"><span>✉️ CARTA DA PIXELMONBEE</span><b>Para você, treinador.</b></div>
+        <div class="letter-body">
+          <h2>Uma carta da nossa colmeia 💛</h2>
+          <p>Olá, treinador!</p>
+          <p>Se você chegou até aqui, queremos agradecer por conhecer a PixelmonBee. Nosso servidor nasceu da vontade de criar um lugar divertido e acolhedor para quem gosta de Pokémon e Minecraft.</p>
+          <p>Ainda estamos construindo tudo aos poucos. Hoje estamos no Aternos, mas estamos juntando recursos para alcançar uma hospedagem paga e deixar a experiência cada vez melhor.</p>
+          <p>Aqui, sua aventura pode ser do seu jeito: capture seus Pokémon, monte sua equipe, descubra novas gerações, explore Mega Evoluções e participe da comunidade.</p>
+          <p class="signature">Com carinho,<br><strong>Equipe PixelmonBee 🐝</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="loja" class="section shop-section">
+      <div class="section-heading reveal">
+        <span>🛍️ LOJA</span>
+        <h2>Fortaleça a colmeia</h2>
+        <p>Escolha um produto e clique em “Quero este”. Você será levado diretamente ao canal oficial de tickets.</p>
+      </div>
+
+      <div class="store-banner reveal"><img src="loja-banner.png" alt="Loja PixelmonBee — VIPs, chaves e meteoritos"></div>
+      <div class="shop-nav reveal">
+        <button class="tab active" data-filter="all">✨ Tudo</button>
+        <button class="tab" data-filter="vip">👑 VIP</button>
+        <button class="tab" data-filter="key">🔑 Chave</button>
+        <button class="tab" data-filter="meteor">🧬 Meteoritos</button>
+      </div>
+
+      <div class="products">
+        <article class="product reveal" data-category="vip">
+          <div class="product-art bee-art"><img src="bee-mascot.jpg" alt="Abelhinha"></div>
+          <small>VIP • 1 MÊS</small><h3>VIP Abelhinha</h3><strong class="price">R$ 14,99</strong>
+          <ul><li>Área VIP</li><li>Upador VIP</li><li>Kit Abelhinha</li><li>Tag no Discord e Minecraft</li><li>Mochila customizada</li></ul>
+          <a class="buy-btn" href="ticket.html?item=VIP%20Abelhinha%20%7C%20R%24%2014%2C99">🛒 Quero este</a>
+        </article>
+
+        <article class="product featured reveal" data-category="vip">
+          <em>MAIS COMPLETO</em><div class="product-art crown-art">👑</div>
+          <small>VIP • 1 MÊS</small><h3>VIP Rainha da Colmeia</h3><strong class="price">R$ 30,99</strong>
+          <ul><li>Fly e comandos</li><li>Área VIP</li><li>Upador VIP</li><li>Kit Rainha</li><li>Mochila customizada</li><li>Tag no Discord e Minecraft</li></ul>
+          <a class="buy-btn" href="ticket.html?item=VIP%20Rainha%20da%20Colmeia%20%7C%20R%24%2030%2C99">🛒 Quero este</a>
+        </article>
+
+        <article class="product reveal" data-category="key">
+          <div class="product-art key-art">🔑</div>
+          <small>CHAVE • TEMPORADA</small><h3>Chave de Textura</h3><strong class="price">R$ 20,99</strong>
+          <p>Abra caixas e tenha acesso a Pokémon com texturas únicas.</p>
+          <div class="note">🔄 Texturas novas por temporada/mês.</div>
+          <a class="buy-btn" href="ticket.html?item=Chave%20de%20Textura%20%7C%20R%24%2020%2C99">🛒 Quero este</a>
+        </article>
+
+        <article class="product meteor-card reveal" data-category="meteor">
+          <div class="product-art meteor-art">🧬</div>
+          <small>MEGA EVOLUÇÃO</small><h3>Mega Meteoritos</h3>
+          <div class="meteor-list">
+            <span>Meteorito-X <b>R$ 5,99</b></span><span>Meteorito-Z <b>R$ 5,99</b></span>
+            <span>Meteorito-Y <b>R$ 5,99</b></span><span>Meteorito-W <b>R$ 5,99</b></span>
+            <span>Meteorito-T <b>R$ 5,99</b></span>
+          </div>
+          <p>Use para evoluir seu Pokémon para Mega!</p>
+          <a class="buy-btn" href="ticket.html?item=Mega%20Meteorito%20%7C%20R%24%205%2C99%20%7C%20Escolher%20X%2C%20Z%2C%20Y%2C%20W%20ou%20T">🛒 Quero este</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="regras" class="section rules-section">
+      <div class="section-heading reveal"><span>📜 REGRAS</span><h2>Uma colmeia saudável</h2><p>Respeito, bom senso e diversão vêm primeiro.</p></div>
+      <div class="rules">
+        <details class="rule reveal" open><summary><b>01</b> Bom senso e respeito</summary><p>Use o bom senso mesmo quando algo não estiver escrito. Nossa comunidade reúne pessoas diferentes, então trate todos com respeito e empatia.</p></details>
+        <details class="rule reveal"><summary><b>02</b> Autoridade da Staff</summary><p>Se um membro da staff pedir para parar algo, respeite o pedido. As regras também valem para a equipe. Em caso de abuso de poder, reporte por ticket ou à administração.</p></details>
+        <details class="rule reveal"><summary><b>03</b> Revisão de punições</summary><p>Se você acredita que foi punido injustamente, abra um ticket, apresente evidências e explique sua versão com respeito.</p></details>
+        <details class="rule reveal"><summary><b>04</b> Tempo e gravidade</summary><p>A duração e o tipo de punição podem variar conforme cada situação. A equipe avalia o contexto antes de decidir.</p></details>
+      </div>
+      <div class="suggestion reveal">💡 Sugestões: envie sua ideia no canal de sugestões do Discord. Ajude a construir a PixelmonBee!</div>
+    </section>
+
+    <section class="section discord-section">
+      <div class="discord-card reveal">
+        <div class="discord-icon">💬</div>
+        <div><span>DISCORD OFICIAL</span><h2>Faça parte da colmeia</h2><p>Receba novidades, converse com a comunidade e acesse o atendimento.</p></div>
+        <a class="btn primary" href="https://discord.gg/A4HREpduk" target="_blank" rel="noopener">Entrar no Discord ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand"><img src="bee-mascot.jpg" alt=""><b>PixelmonBee</b></div>
+    <p>Feito com carinho para a nossa colmeia. 🐝</p>
+    <div class="footer-links"><a href="#inicio">Início</a><a href="#novidades">Novidades</a><a href="#loja">Loja</a><a href="https://discord.gg/A4HREpduk" target="_blank" rel="noopener">Discord</a></div>
+    <p class="copyright">© <span id="year"></span> PixelmonBee</p>
+  </footer>
+
+  <div class="toast" id="toast">✅ IP copiado!</div>
+  <button class="to-top" id="to-top" aria-label="Voltar ao topo">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
